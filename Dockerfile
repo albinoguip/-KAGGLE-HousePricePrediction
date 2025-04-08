@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY main.py .
+COPY model.py .
 
 # Define a porta padrão do Cloud Run
 ENV PORT=8080
